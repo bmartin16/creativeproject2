@@ -1,18 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lab 2</title>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 
 <body>
+  <nav class="navbar navbar-light" style="background-color: #72bcd4;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">WeatherLite</span>
+    </div>
+  </nav>
+<div class="pageContainer">
+  <h1 class="label"> Weather Lite </h1>
+  <div class="userInput">
+    <form>
+      <input id="weatherInput" type="text" placeholder = "Enter a U.S. city"></input><br/>
+      <input class="btn btn-secondary" style="background-color: #ededed, color: gray;" id="weatherSubmit" type="submit" value="Submit"></input>
+    </form>
+  </div>
+</div>
+  <div id="weatherResults">
+  </div>
+  <div id="forecastContainer">
+    <div id="forecastResults">
+    </div>
+  </div>
 
-  <h1>Lab 2</h1>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-  <script text="type/javascript" src="/script.js">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="script.js">
   </script>
 
 </body>
