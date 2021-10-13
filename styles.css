@@ -44,10 +44,25 @@ h1
   display: flex;
   border: 5px solid #ffb347;
 }
-.btn
+#chuckButton
 {
   font-family: "Copperplate", fantasy;
   font-size: 2em;
   width: 25%;
   padding: 15px;
+}
+@media only screen and (max-width: 510px)
+{
+ #chuckButton
+  {
+    font-size: 1em;
+    text-align: center;
+    width:100%;
+    padding: 10px;
+  }
+  #chuckPic
+  {
+    height: 80%;
+    width: 80%;
+  }
 }
